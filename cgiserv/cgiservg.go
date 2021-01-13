@@ -8,7 +8,7 @@ import (
 func SetOut() {
 
     curr, err := os.Getwd()
-    if err ! nil {
+    if err != nil {
         log.Println("Get Error: ", err)
         return
     }
