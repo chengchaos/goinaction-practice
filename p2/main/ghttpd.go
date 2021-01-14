@@ -8,11 +8,9 @@ import (
 
 func init() {
 	log.SetPrefix("TRACE: ")
-	log.SetFlags(log.Ldate |
-		log.Lmicroseconds |
-		//log.Llongfile)
-		log.Lshortfile,
-	)
+	// log.Llongfile  log.Lshortfile,
+	log.SetFlags(log.Ldate | log.Lmicroseconds | log.Lshortfile)
+
 }
 func index(w http.ResponseWriter, r *http.Request) {
 
